@@ -53,7 +53,7 @@ pipeline {
                 sh '''
                     npm ci
                     npm run build
-                    npm install serve
+                    npm install -g serve
                     serve -s build
                     npx playwright test
                 '''
