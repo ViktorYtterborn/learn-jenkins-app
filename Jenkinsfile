@@ -52,9 +52,9 @@ pipeline {
             steps {
                 sh '''
                     npm ci
-                    npm 
-                    npm install -g serve
-                    npm -s build
+                    npm build
+                    npm install serve
+                    serve -s build
                     npx playwright test
                 '''
             }
